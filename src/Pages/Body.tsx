@@ -15,7 +15,7 @@ export default Body;
 const Container = styled.div`
 height:100%;
 width:calc(100vw - 280px);
-background-color:orange;
+// background-color:orange;
 position:relative;
 // top:70px;
 overflow:clip;

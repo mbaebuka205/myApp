@@ -6,7 +6,7 @@ import {LuMegaphone} from 'react-icons/lu'
 import {BiQuestionMark} from 'react-icons/bi'
 import {CiSettings} from 'react-icons/ci'
 import {MdOutlineCancel} from 'react-icons/md'
-import settings from '../../props/settings'
+import  Sp from '../../props/Sprp'
 
 
 const Dashboard = () =>{
@@ -84,40 +84,40 @@ const Dashboard = () =>{
             <First>
               <Dtop>
                 <p>
-                  GENERAL
+                  General
                 </p>
               </Dtop>
               <Dres>
-                <span>confirm before deleting</span>
-                <OffOn></OffOn>
+                <span>Confirm before deleting</span>
+                <OffOn><Sp/></OffOn>
               </Dres>
               <Dres>
-                <span>add new task on top</span>
-                <OffOn></OffOn>
+                <span>Add new task on top</span>
+                <OffOn><Sp/></OffOn>
               </Dres>
               <Dres>
-                <span>move starred on to top</span>
-                <OffOn></OffOn>
+                <span>Move starred on to top</span>
+                <OffOn><Sp/></OffOn>
               </Dres>
               <Dres>
-                <span>play completion sound</span>
-                <OffOn></OffOn>
+                <span>Play completion sound</span>
+                <OffOn><Sp/></OffOn>
               </Dres>
               <Dres>
-                <span>show right-click menus</span>
-                <OffOn></OffOn>
+                <span>Show right-click menus</span>
+                <OffOn><Sp/></OffOn>
               </Dres>
               <Dres>
-                <span>turn on reminder notification</span>
-                <OffOn></OffOn>
+                <span>Turn on reminder notification</span>
+                <OffOn><Sp/></OffOn>
               </Dres>
               <Dres>
-                <span>show task that seem important in my day</span>
-                <OffOn></OffOn>
+                <span>Show task that seem important in my day</span>
+                <OffOn><Sp/></OffOn>
               </Dres>
               <Dres>
-                <span>turn on night mood</span>
-                <OffOn></OffOn>
+                <span>Turn on night mood</span>
+                <OffOn><Sp/></OffOn>
               </Dres>
             </First>
           </Settings>):(null)}
@@ -139,28 +139,29 @@ const Dashboard = () =>{
 export default Dashboard;
 const OffOn = styled.div`
 height:26px;
-width:35%;
-background-color:blue;
+width:24%;
+// background-color:wheat;
 display:flex;
 justify-content:space-between;
-align-items:center
+align-items:center;
+position:relative;
 `
 const Dres = styled.div`
 width:100%;
 height:50px;
-background-color:pink;
+// background-color:pink;
 display:flex;
 justify-content:space-between;
 flex-direction:column;
 align-items:flex-start;
 span{
-  font-size:13px
+  font-size:15px
 }
 `
 const Dtop = styled.div`
 width:30%;
 height:35px;
-background-color:orange;
+// background-color:orange;
 p{
   font-size:16px;
 }
@@ -168,16 +169,18 @@ p{
 const First = styled.div`
 height:550px;
 width:86%;
-background-color:purple;
+// background-color:purple;
 display:flex;
 flex-direction:column;
 justify-content:space-between;
 align-items:flex-start;
+margin-left:7px;
 `
 const Header = styled.div`
 height:50px;
 width:95%;
-background-color:pink;
+margin-left:7px;
+// background-color:pink;
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -189,46 +192,48 @@ const Inv = styled.div`
 font-size:25px;
 `
 const Log = styled.div`
-width:31%;
+width:26%;
 height:581px;
 background-color:brown;
 overflow-y:auto;
 position:absolute;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 right:0px;
 top:70px;
 z-index:1;
 `
 const Spek = styled.div`
-width:31%;
+width:26%;
 height:581px;
 background-color:pink;
 overflow-y:auto;
 position:absolute;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 right:0px;
 top:70px;
 z-index:1;
 `
 const Sach = styled.div`
-width:31%;
+width:26%;
 height:581px;
 background-color:wheat;
 overflow-y:auto;
 position:absolute;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 right:0px;
 top:70px;
 z-index:1;
 `
 const Settings = styled.div`
-width:31%;
+width:26%;
 height:581px;
-background-color:gray;
+// background-color:gray;
 overflow-y:auto;
 position:absolute;
 right:0px;
 top:70px;
 z-index:1;
-
-// box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 // ::-webkit-scrollbar {
 //   width:5px;
 // }
@@ -238,33 +243,46 @@ z-index:1;
 `
 const Ic1 = styled.div`
 font-size:22px;
+color:white;
 height:100%;
 display:flex;
 justify-content:center;
 align-items:center;
 width:25%;
-background-color:blue;
+&:hover{
+  border:1px solid white;
+  background-color:rgba(000, 000, 000, 0.3)
+}
 `
 const Ic2 = styled.div`
 font-size:22px;
+color:white;
 height:100%;
 display:flex;
 justify-content:center;
 align-items:center;
 width:25%;
-background-color:blue;
+&:hover{
+  border:1px solid white;
+  background-color:rgba(000, 000, 000, 0.3)
+}
 `
 const Ic3 = styled.div`
 font-size:22px;
+color:white;
 height:100%;
 display:flex;
 justify-content:center;
 align-items:center;
 width:25%;
-background-color:blue;
+&:hover{
+  border:1px solid white;
+  background-color:rgba(000, 000, 000, 0.3)
+}
 `
 const Ic4 = styled.div`
 height:35px;
+color:white;
 width:35px;
 border-radius:50%;
 border:1px solid white;
@@ -279,6 +297,7 @@ margin-left:10px;
 `
 const Menu = styled.div`
 font-size:25px;
+color:white;
 `
 const Div3 = styled.div`
 height:60px;
@@ -286,7 +305,6 @@ width:19%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background-color:green;
 `
 
 const Div2 = styled.div`
@@ -311,8 +329,9 @@ width:7.5%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background-color:green;
-
+h4{
+  color:white;
+}
 `
 
 const Wrapper = styled.div`
@@ -321,7 +340,7 @@ width:97%;
 display:flex;
 justify-content:space-between;
 align-items: center;
-background-color: purple;
+// background-color: purple;
 `
 const Container = styled.div`
 height:70px;
