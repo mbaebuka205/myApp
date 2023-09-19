@@ -6,6 +6,7 @@ import {LuMegaphone} from 'react-icons/lu'
 import {BiQuestionMark} from 'react-icons/bi'
 import {CiSettings} from 'react-icons/ci'
 import {MdOutlineCancel} from 'react-icons/md'
+import settings from '../../props/settings'
 
 
 const Dashboard = () =>{
